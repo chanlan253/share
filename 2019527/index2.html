@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>如果让footer固定在底部</title>
+	<style ref="css/style">
+		html{
+		  height: 100%;
+		  margin: 0;
+		  padding: 0;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+			min-height: 100%;
+			display: flex;
+	  		flex-direction: column;
+  		}
+		header{background:red;}
+		.wrapper {
+		  flex: 1;
+		}
+		.footer{background: blue; height: 100px;}
+	</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>flex布局（当底部高度不确定时）</header>
+    <div class="push">我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/></div>
+  </div>
+  <footer class="footer"></footer>
+</body>
+</html>

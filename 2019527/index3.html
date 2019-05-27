@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>如果让footer固定在底部</title>
+	<style ref="css/style">
+		html, body {
+		  height: 100%;
+		  margin: 0;
+		  padding: 0;
+		}
+		header{background:red;}
+		.wrapper {
+		  min-height: 100%;
+		  position: relative;
+		  box-sizing: border-box;
+		  padding-bottom: 70px
+		}
+		.footer{ height:70px; background: blue; position: absolute; width: 100%; bottom:0;}
+	</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>通过css计算法(兼容性最好)</header>
+    <div class="push">我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/>我是其他内容<br/></div>
+    <footer class="footer"></footer>
+  </div>
+
+</body>
+</html>
